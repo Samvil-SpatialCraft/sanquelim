@@ -1,0 +1,89 @@
+
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.map-switcher{
+  position: fixed;
+  bottom: 10px;
+  right: 275px;
+  background-color: white;
+  width: 30px;
+  border: #000 1px solid;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#osm{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+#gsm{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+#disclaim{
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  font-size: 10px;
+  font-weight: bold;
+
+}
+
+@media (max-width: 600px) {
+  .map-switcher{
+    position: fixed;
+    bottom: 20px;
+    right: 35px;
+    background-color: white;
+    width: 30px;
+    border: #000 1px solid;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 20px;
+  }
+  #osm{
+    position: relative;
+    width: 30px;
+    height: 20px;
+    display: none;
+  }
+  #gsm{
+    position: relative;
+    width: 30px;
+    height: 20px;
+    display: block;
+  }
+  #disclaim{
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    font-size: 4px;
+    font-weight: bold;
+
+  }
+  .ol-attribution ul {
+    font-size: 4px; /* Smaller font size for mobile */
+}
+
+.ol-attribution li {
+    font-size: 4px; /* Smaller font size for mobile */
+}
+  
+}
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="images/SpatialCraft-Color-Logomark.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanquelim Wetlands </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/tooltip.css">
+    <link rel="stylesheet" href="/styles/legend.css">
+  </head>
+  <body>
+    <div id="map"></div>
+    <!--legend -->
+    <div class="legend">
+      <div class="legend-item">
+          <div class="waterbody-line"></div>
+          <div class="legend-label">Waterbody</div>
+      </div>
+      <div class="legend-item">
+          <div class="buffer-line"></div>
+          <div class="legend-label">50 m Buffer Line</div>
+      </div>
+      <!-- Add more legend items as needed -->
+  </div>
+    <!--Disclaimer -->
+      <span id="disclaim">SpatialCraft disclaims any liability for errors, omissions, or discrepancies in the information provided on this map.</span>
+    <!-- Base layer Tooltip -->
+    <div class="tooltip" id="mapswitcher-tooltip">
+      <a href="#">
+        <div id="map-switcher" class="map-switcher">
+          <img id="osm" src="./images/Openstreetmap_logo.svg.png"  alt="">
+          <img id="gsm" src="./images/Google_Maps_icon_(2020).svg.png"  alt="">
+        </div>
+      </a>
+      <span id="tooltips" class="tooltiptext"></span>
+    </div>
+    <script type="module" src="./scripts/map.js"></script>
+    <script type="module" src="./scripts/Customfunction.js"></script>
+    <script type="module" src="./scripts/layerswitcher.js"></script>
+  </body>
+</html>
